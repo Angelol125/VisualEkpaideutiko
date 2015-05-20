@@ -4,7 +4,7 @@
 	x:Class="Ergasia_Ekpaideftiko_Logimiko.App"
 	StartupUri="MainWindow.xaml">
 	<Application.Resources>
-		<!-- Resources scoped at the Application level should be defined here test. -->
+		<!-- Resources scoped at the Application level should be defined here test gia ton tsami kai mono. -->
 		<ImageBrush x:Key="ImageBrush1" ImageSource="pack://siteoforigin:,,,/donald-duck-math edited.jpg"/>
 		<ImageBrush x:Key="ImageBrush2" ImageSource="book2.jpg"/>
 		<ImageBrush x:Key="ImageBrush3" ImageSource="Blank-blackboard-in-a-classroom.jpg"/>
