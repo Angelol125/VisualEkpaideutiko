@@ -1,0 +1,15 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Ergasia_Ekpaideftiko_Logimiko.App"
+	StartupUri="MainWindow.xaml">
+	<Application.Resources>
+		<!-- Resources scoped at the Application level should be defined here. -->
+		<ImageBrush x:Key="ImageBrush1" ImageSource="pack://siteoforigin:,,,/donald-duck-math edited.jpg"/>
+		<ImageBrush x:Key="ImageBrush2" ImageSource="book2.jpg"/>
+		<ImageBrush x:Key="ImageBrush3" ImageSource="Blank-blackboard-in-a-classroom.jpg"/>
+		<ImageBrush x:Key="ImageBrush4" ImageSource="07_blackboard-news3.jpg"/>
+		<ImageBrush x:Key="ImageBrush5" ImageSource="1024_Numbers.jpg"/>
+		<ImageBrush x:Key="ImageBrush6" ImageSource="pack://siteoforigin:,,,/desktop.jpg"/>
+	</Application.Resources>
+</Application>

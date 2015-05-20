@@ -1,0 +1,301 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="Ergasia_Ekpaideftiko_Logimiko.TestExamCreation"
+	x:Name="Window"
+	Title="TestExamCreation"
+	Width="800" Height="600" Background="{DynamicResource ImageBrush5}">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="214*" />
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="245" />
+            <ColumnDefinition Width="319*" />
+        </Grid.ColumnDefinitions>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas1" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ1" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 1" Height="31" x:Name="labelQ1" Width="81" FontWeight="Bold" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label11" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="209" Content="     a." Height="28" x:Name="labela1" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb1" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc1" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA1" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa1" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb1" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc1" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS1" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW1" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Right" Margin="0,64,24,0" x:Name="canvas2" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+        	<TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ2" Width="236" FontFamily="Comic Sans MS" />
+        	<Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 2" FontWeight="Bold" Height="31" x:Name="labelQ2" Width="81" FontFamily="Comic Sans MS" />
+        	<Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label17" FontFamily="Comic Sans MS" FontWeight="Bold" />
+        	<Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela2" FontFamily="Comic Sans MS" FontWeight="Bold" />
+        	<Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb2" FontFamily="Comic Sans MS" FontWeight="Bold" />
+        	<Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc2" FontFamily="Comic Sans MS" FontWeight="Bold" />
+        	<TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA2" Width="305" FontFamily="Comic Sans MS" />
+        	<TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa2" Width="305" FontFamily="Comic Sans MS" />
+        	<TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb2" Width="305" FontFamily="Comic Sans MS" />
+        	<TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc2" Width="305" FontFamily="Comic Sans MS" />
+        	<Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS2" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+        	<ComboBox Height="23" x:Name="comboBoxRW2" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+        	</ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas3" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ3" Width="236" />
+            <Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 3" FontWeight="Bold" Height="31" x:Name="labelQ3" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label21" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA3" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa3" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb3" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc3" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS3" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW3" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas6" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ6" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="149" Canvas.Top="6" Content="Ερώτηση 6" FontWeight="Bold" Height="31" x:Name="labelQ6" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label33" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela6" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb6" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc6" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA6" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa6" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb6" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc6" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS6" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW6" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas7" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ7" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 7" FontWeight="Bold" Height="31" x:Name="labelQ7" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label37" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela7" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb7" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc7" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA7" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa7" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb7" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc7" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS7" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW7" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas8" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ8" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="154" Canvas.Top="9" Content="Ερώτηση 8" FontWeight="Bold" Height="31" x:Name="labelQ8" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label41" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela8" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb8" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc8" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA8" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa8" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb8" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc8" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS8" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW8" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" Margin="-111.409,64,0,0" x:Name="canvas9" VerticalAlignment="Top" Width="410" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ9" Width="236" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="149" Canvas.Top="6" Content="Ερώτηση 9" FontWeight="Bold" Height="31" x:Name="labelQ9" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label45" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela9" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb9" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc9" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA9" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa9" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb9" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc9" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS9" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW9" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="canvas10" Width="410" Margin="-111.409,64,0,0" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ10" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="154" Canvas.Top="8" Content="Ερώτηση 10" FontWeight="Bold" Height="31" x:Name="labelQ10" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label49" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela10" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb10" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc10" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA10" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa10" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb10" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc10" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS10" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW10" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" Margin="12,371,0,0" x:Name="canvasg10" VerticalAlignment="Top" HorizontalAlignment="Left" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button10" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" Cursor="Hand" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Content="Ερώτηση 10" Height="28" x:Name="label10" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox10" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" Cursor="Hand" FontFamily="Comic Sans MS" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,11,0,0" x:Name="canvasg1" VerticalAlignment="Top" Width="320" Background="#FFF9F3F3" Grid.ColumnSpan="2" d:LayoutOverrides="GridBox">
+            <Button Height="23" x:Name="button1" Width="75" Content="Επεξεργασία" Click="buttonEdit_Click" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <Label Content="Ερώτηση 1" Height="28" x:Name="label1" Canvas.Left="1" Canvas.Top="3" FontWeight="Bold" FontFamily="Comic Sans MS" />
+            <ComboBox Height="23" x:Name="comboBox1" Width="138" SelectedIndex="0" DisplayMemberPath="" ItemStringFormat="" Text="" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,51,0,0" x:Name="canvasg2" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button2" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <Label Content="Ερώτηση 2" Height="28" x:Name="label2" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox2" SelectedIndex="0" Text="" Width="138" SelectionChanged="Combo_SelectionChanged" Canvas.Left="180" Canvas.Top="4" IsEnabled="True" FontFamily="Com" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,91,0,0" x:Name="canvasg3" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Label Content="Ερώτηση 3" Height="28" x:Name="label3" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Button Content="Επεξεργασία" Height="23" x:Name="button3" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox3" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,131,0,0" x:Name="canvasg4" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button4" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <Label Content="Ερώτηση 4" Height="28" x:Name="label4" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox4" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,171,0,0" x:Name="canvasg5" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" x:Name="button5" Width="75" Height="23" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold" />
+            <Label Content="Ερώτηση 5" Height="28" x:Name="label5" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox5" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,211,0,0" x:Name="canvasg6" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button6" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <Label Content="Ερώτηση 6" Height="28" x:Name="label6" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox6" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,251,0,0" x:Name="canvasg7" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" x:Name="button7" Width="75" Height="23" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold" />
+            <Label Content="Ερώτηση 7" Height="28" x:Name="label7" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox7" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,291,0,0" x:Name="canvasg8" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button8" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold" />
+            <Label Content="Ερώτηση 8" Height="28" x:Name="label8" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox8" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="31" HorizontalAlignment="Left" Margin="12,331,0,0" x:Name="canvasg9" VerticalAlignment="Top" Width="320" Visibility="Hidden" Background="#FFF9F3F3">
+            <Button Content="Επεξεργασία" Height="23" x:Name="button9" Width="75" Canvas.Left="99" Canvas.Top="4" IsEnabled="False" Click="buttonEdit_Click" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold" />
+            <Label Content="Ερώτηση 9" Height="28" x:Name="label9" Width="Auto" Canvas.Left="1" Canvas.Top="3" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <ComboBox DisplayMemberPath="" Height="23" ItemStringFormat="" x:Name="comboBox9" SelectedIndex="0" Text="" Width="138" Canvas.Left="180" Canvas.Top="4" SelectionChanged="Combo_SelectionChanged" FontFamily="Comic Sans MS" Cursor="Hand" FontWeight="Bold">
+                <ComboBoxItem Content="Επιλέξτε Κατηγορία" Cursor="Hand"/>
+                <ComboBoxItem Content="Πολλαπλής Επιλογής" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό Λάθος" Cursor="Hand"/>
+                <ComboBoxItem Content="Συμπλήρωση Κενού" />
+            </ComboBox>
+        </Canvas>
+        <Button Content="Δημιουργία Καινούργιας Ερώτησης" Height="23" HorizontalAlignment="Right" Margin="0,15,-95.591,0" x:Name="button11" VerticalAlignment="Top" Width="207" Click="button11_Click" IsEnabled="False" Grid.Column="2" d:LayoutOverrides="GridBox" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+        <Button Content="Διαγραφή" Height="23" HorizontalAlignment="Left" Margin="105,15,0,0" x:Name="button12" VerticalAlignment="Top" Width="75" Grid.Column="3" Click="button12_Click" FontWeight="Bold" FontFamily="Comic Sans MS" Cursor="Hand" />
+        <Canvas Height="352" x:Name="canvas4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="410" Margin="-111.409,64,0,0" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ4" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 4" FontWeight="Bold" Height="31" x:Name="labelQ4" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label25" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela4" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="252" Content="b." Height="28" x:Name="labelb4" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc4" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA4" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa4" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb4" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc4" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS4" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW4" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Canvas Height="352" x:Name="canvas5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="410" Margin="-111.409,64,0,0" Background="White" Grid.Column="3" d:LayoutOverrides="GridBox" Visibility="Hidden">
+            <TextBox Canvas.Left="84" Canvas.Top="43" Height="113" x:Name="textBoxQ5" Width="236" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="173" Canvas.Top="7" Content="Ερώτηση 5" FontWeight="Bold" Height="31" x:Name="labelQ5" Width="81" FontFamily="Comic Sans MS" />
+            <Label Canvas.Left="6" Canvas.Top="168" Content="Σωστη." Height="28" x:Name="label29" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="6" Canvas.Top="211" Content="     a." Height="28" x:Name="labela5" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="31" Canvas.Top="252" Content="b." Height="28" x:Name="labelb5" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <Label Canvas.Left="33" Canvas.Top="293" Content="c." Height="28" x:Name="labelc5" FontFamily="Comic Sans MS" FontWeight="Bold" />
+            <TextBox Canvas.Left="51" Canvas.Top="168" Height="23" x:Name="textBoxA5" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="211" Height="23" x:Name="textBoxa5" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="252" Height="23" x:Name="textBoxb5" Width="305" FontFamily="Comic Sans MS" />
+            <TextBox Canvas.Left="51" Canvas.Top="293" Height="23" x:Name="textBoxc5" Width="305" FontFamily="Comic Sans MS" />
+            <Button Canvas.Left="154" Canvas.Top="323" Content="Αποθήκευση" Height="23" x:Name="buttonS5" Width="76" Click="buttonSaves_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand" />
+            <ComboBox Height="23" x:Name="comboBoxRW5" SelectedIndex="0" Width="147" Canvas.Left="134" Canvas.Top="168" FontFamily="Comic Sans MS" FontWeight="Bold" Cursor="Hand">
+                <ComboBoxItem Content="Επιλέξτε Απάντηση" Cursor="Hand"/>
+                <ComboBoxItem Content="Σωστό" Cursor="Hand"/>
+                <ComboBoxItem Content="Λάθος" Cursor="Hand"/>
+            </ComboBox>
+        </Canvas>
+        <Button Content="Δημιουργία Τέστ" Height="23" HorizontalAlignment="Left" Margin="184,15,0,0" x:Name="button13" VerticalAlignment="Top" Width="121" Grid.Column="3" Click="button13_Click" d:LayoutOverrides="GridBox" FontWeight="Bold" FontFamily="Comic Sans MS" Cursor="Hand" />
+    </Grid>
+</Window>
